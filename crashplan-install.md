@@ -1,3 +1,5 @@
+http://pcloadletter.co.uk/2012/01/30/crashplan-syno-package/comment-page-17/
+
 CrashPlan packages for Synology NAS
 2,363 Replies
 UPDATE – The instructions and notes on this page apply to all three versions of the package hosted on my repo: CrashPlan, CrashPlan PRO, and CrashPlan PROe.
