@@ -20,3 +20,5 @@ changer les comptes des applis
 installer des paquets comme config file editor
 
 Ajouter service d'IP dydns OVH
+
+Vérifier le volume de chaque dossier, lancer putty puis : cd /volume1 et ensuite du -hs * |sort -nr 
