@@ -1,5 +1,7 @@
 http://pcloadletter.co.uk/2012/01/30/crashplan-syno-package/comment-page-17
 
+Ou utiliser le planificateur de tâches intégré au DSM 5.0
+
 After their backup is seeded some users may wish to schedule the CrashPlan engine using cron so that it only runs at certain times. This is particularly useful on ARM systems because CrashPlan currently prevents hibernation while it is running (unresolved issue, reported to Code 42). To schedule, edit /etc/crontab and add the following entries for starting and stopping CrashPlan:
 
 55 2 * * * root /var/packages/CrashPlan/scripts/start-stop-status start
