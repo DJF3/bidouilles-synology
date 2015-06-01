@@ -44,3 +44,30 @@ find . -name @eaDir -print | while read n ; echo $n ; rm -rf "$n" ; done
 Éviter la génération de vignettes dans windows :
 -> Windows7 Computer properties ->Advanced Systems settings->Advanced->Performance settings->Customs
 unchecked "Show thumbnail instead of Icon"
+
+#Exclure les dossiers @eradir du scan xbmc/kodi
+
+dans le fichier advanced settings
+```
+  <video>
+    <excludefromscan>
+      <regexp>\@eaDir</regexp>
+      <regexp>\@eadir</regexp>
+      <regexp>\@EADIR</regexp>
+      <regexp>\#recycle</regexp>
+      <regexp>-trailer</regexp>
+      <regexp>[!-._ \\/]sample[-._ \\/]</regexp>
+    </excludefromscan>
+    <excludefromlisting>
+      <regexp>\@eaDir</regexp>
+      <regexp>\@eadir</regexp>
+      <regexp>\@EADIR</regexp>
+      <regexp>\.DS_Store</regexp>
+      <regexp>-trailer</regexp>
+      <regexp>[!-._ \\/]sample[-._ \\/]</regexp>
+      <regexp>\#recycle</regexp>
+    </excludefromlisting>
+  </video>
+```  
+tester aussi avec `<excludetvshowsfromscan>`
+```
