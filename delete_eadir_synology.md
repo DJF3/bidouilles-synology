@@ -1,3 +1,5 @@
+Possibilité de faire un cron pour automatiser ces tâches.
+
 #Solution 1
 
 In order to completely stop the generation of @eaDir folders, it’s necessary to disable the services that are generating them.
