@@ -38,3 +38,7 @@ To delete *all* @eaDir folders on your system:
 cd /volume1/music (or wherever your doc root is)
 find . -name @eaDir -print | while read n ; echo $n ; rm -rf "$n" ; done
 ```
+
+Éviter la génération de vignettes dans windows :
+-> Windows7 Computer properties ->Advanced Systems settings->Advanced->Performance settings->Customs
+unchecked "Show thumbnail instead of Icon"
