@@ -19,6 +19,8 @@ S99iTunes.sh start
 ```
 
 To delete *all* @eaDir folders on your system:
-CAUTION:  This will delete files without confirmation, so be sure you have it right!! 
+*CAUTION:  This will delete files without confirmation, so be sure you have it right!!*
+```
 cd /volume1/music (or wherever your doc root is)
 find . -name @eaDir -print | while read n ; echo $n ; rm -rf "$n" ; done
+```
