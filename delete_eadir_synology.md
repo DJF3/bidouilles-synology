@@ -1,3 +1,17 @@
+#Solution 1
+
+In order to completely stop the generation of @eaDir folders, it’s necessary to disable the services that are generating them.
+```
+cd /usr/syno/etc.defaults/rc.d/
+chmod 000 S66fileindexd.sh S66synoindexd.sh S77synomkthumbd.sh S88synomkflvd.sh S99iTunes.sh
+```
+First, SSH into your Synology NAS box and log in as root, then type this to locate the @eaDir folders:
+```find . -name "@eaDir" -type d | more```
+
+If you’re happy you’re not going to accidentally delete something important, then make it happen:
+```find . -name "@eaDir" -type d -print0 | xargs -0 rm -rf```
+
+#Solution 2
 To stop the folders from being created:
 ```
 cd /usr/syno/etc.defaults/rc.d
